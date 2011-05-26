@@ -14,6 +14,12 @@ function git-log {
 }
 Set-Alias -Name glog -Value git-log
 
+function git-branchnew {
+	$branch = $args[0]
+	git checkout -b $branch
+}
+Set-Alias -Name gbnew -Value git-branchnew
+
 function git-branchshare {
 	$branch_to_publish = $args[0]
 	if($branch_to_publish -eq "") {

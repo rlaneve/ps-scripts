@@ -11,6 +11,9 @@ Runs 'git status'
 #### glog
 Runs 'git log' with a specific "pretty-format".
 
+#### gbnew [branch_name]
+Creates a new local branch with the supplied name and checks out the new branch.
+
 #### gbshare [branch_name]
 Pushes specified branch to remote origin, sets up local branch to track remote and checks out local branch.
 

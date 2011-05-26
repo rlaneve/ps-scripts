@@ -21,7 +21,7 @@ Pushes specified branch to remote origin, sets up local branch to track remote a
 Creates new local branch setup to track remote branch and checks out new local branch.
 
 #### gbdelete [branch_name]
-Deletes specified branch from remote and local. Will *not* delete branches named "master" or "develop".
+Deletes specified branch from remote and local.
 
 #### gco [branch_name]
 Checks out specified branch.

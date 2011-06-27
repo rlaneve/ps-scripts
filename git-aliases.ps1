@@ -10,7 +10,7 @@ function git-status {
 Set-Alias -Name gs -Value git-status
 
 function git-log {
-	git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset'
+	git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' $args
 }
 Set-Alias -Name glog -Value git-log
 

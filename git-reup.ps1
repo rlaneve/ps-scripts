@@ -13,7 +13,7 @@ function git-reup {
 
 	$msg = (& git stash save "Auto-stash by greup script" 2>&1 | Out-String)
 	
-	$stashed = $msg -icontains "No local changes to save"
+	$stashed = ($msg.Contains("No local changes to save") -eq $False)
 	
 	git pull --rebase
 	$new_head = (& git rev-parse HEAD 2>&1 | Out-String).Substring(0, 7)
